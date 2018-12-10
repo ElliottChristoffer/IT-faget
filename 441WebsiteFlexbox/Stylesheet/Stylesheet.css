@@ -54,7 +54,7 @@
      order: 3;
 	padding: 5px;
 	margin: 5px;
-	align-items: center;
+	align-items: stretch;
 	flex-direction: row;
 	flex-wrap: wrap;
 	display: flex;
