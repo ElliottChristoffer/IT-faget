@@ -1,57 +1,55 @@
+/*Stylesheetet for denne oppgaven*/
 .box {
-      width: 85%;
-      margin: 5px auto;
-      padding: 5px;
-      background-color: #404040;
-      display: flex;
-      flex-direction: row;
-      flex-wrap: wrap;
-    }
+	width: 85%;
+	margin: 5px auto;
+	padding: 5px;
+	background-color: #404040; /*Gir en mørk farge, brukt som bakgrunn pga alt går inn under denne "boksen"*/
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+}
 
 .topp{
-      flex-basis: 100%;
-      height: 60px;
-      background-color: #909090;/* Ganske standard grå farge*/
+	flex-basis: 100%;
+	height: 60px;
+	background-color: #909090;/* Ganske standard grå farge*/
 	text-align: center;
-      order: 1;
+	order: 1;
 	font-size: 45px;
 	color: #D9D9D9;
 	margin-top: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
-
-    }
+}
 
 .toppunder{
-      flex-basis: 100%;
-      height: 60px;
-      background-color: #909090;/* Ganske standard grå farge*/
+	flex-basis: 100%;
+	height: 60px;
+ 	background-color: #909090;/* Ganske standard grå farge*/
      	text-align: center;
-     order: 2;
+	order: 2;
 	font-size: 20px;
 	color: #D9D9D9; /* Lysere gråfarge*/
 	margin-under: 5px;
 	margin-left: 5px;
 	margin-right: 5px;
-
-    }
+}
 
 .meny {
-      flex-basis 200px;
-      background-color: #FF0000;
-      padding: 5px 20px 5px; /*5px betyr topp, 20px betyr 			venstre og høyre, 5px betyr bunn*/
-      margin: 5px;
-      order: 3;
+	flex-basis 200px;
+	background-color: #FF0000;
+	padding: 5px 20px 5px; /*5px betyr topp, 20px betyr venstre og høyre, 5px betyr bunn*/
+	margin: 5px;
+	order: 3;
 	color: #48FFFF; /* Lyse blå farge (cyan)*/
 	font-size: 30px;
 	text-decoration: none;
-	
-    }
+}
 
 .innhold {
-    background-color: #909090;/* Ganske standard grå farge*/
-     flex: 1;
-     order: 4;
+	background-color: #909090;/* Ganske standard grå farge*/
+	flex: 1;
+	order: 4;
 	padding: 5px;
 	margin: 5px;
 	align-items: stretch;
@@ -59,8 +57,7 @@
 	flex-wrap: wrap;
 	display: flex;
 	justify-content: center;
-
-    }
+}
 
 .info {
 	width: 40%;	
@@ -76,13 +73,14 @@
 .info1 {
 	width: 40%;	      
 	flex-basis 10%;
-      background-color: #48ffff;
-      padding: 10px;
-      margin: 10px;
+	background-color: #48ffff;
+	padding: 10px;
+	margin: 10px;
 	margin-over: 20px;
-      order: 7;
+	order: 7;
 	flex-grow: 0;
-	}
+}
+
 .tabell {
 	width: 100%;	
 	flex-basis 100%;
@@ -93,12 +91,14 @@
 	order: 6;
 	}
 
-	
+/*Spesial greier som ikke omfatter boksene og dems design*/	
+
+/*table elementene gir tabellen dens design*/
 table#t01 tr:nth-child(even){
 	background-color: #20DDDD;
 }
 table#t01 tr:nth-child(odd){
-	background-color: #20AAAA;
+background-color: #20AAAA;
 }
 table#t01 th{
 	color: white;
@@ -109,9 +109,9 @@ border-style: solid;
 border-width: 5px;
 border-color: #111111;
 width: 100%;
-
 }
 
+/* img fjør at bilde dekker hele boksen den er i og ikke en tilfeldig størrelse*/
 img {
 width: 100%;
 }
